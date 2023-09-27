@@ -1,4 +1,3 @@
-import * as login from './module/login';
-import * as index from './module/index';
+import * as weather from './module/weather';
 
-export default Object.assign({}, login, index);
+export default Object.assign({}, weather);

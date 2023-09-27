@@ -20,8 +20,8 @@
     },
     "lint-staged": {
         "*.{js,ts,vue}": [
-            "pnpm run eslint",
-            "pnpm run prettier"
+            "npm run eslint",
+            "npm run prettier"
         ]
     },
     "dependencies": {
