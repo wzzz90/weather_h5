@@ -38,6 +38,7 @@
     const displayList = computed(() => {
         return state.list.find((item) => item.code === selectCityCode.value);
     });
+    console.log('🚀 ~ file: IndexPage.vue:46 ~ displayList ~ displayList:', displayList);
 
     onBeforeMount(async () => {
         const result = await API.getWeather({
