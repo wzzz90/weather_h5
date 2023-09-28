@@ -11,6 +11,14 @@ export default defineConfig({
         }
     },
     plugins: [vue()],
+    css: {
+        // 预处理器配置项
+        preprocessorOptions: {
+            less: {
+                javascriptEnabled: true
+            }
+        }
+    },
     server: {
         port: 8080, //启动端口
         hmr: {

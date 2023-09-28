@@ -17,11 +17,13 @@ service.interceptors.request.use(
 service.interceptors.response.use(
     async (response: AxiosResponse) => {
         console.log(response);
-
-        // do something
+        if (response.status === 200 && response.data.status === '1') {
+            return response.data;
+        } else {
+            return Promise.reject(response.data);
+        }
     },
     (error: any) => {
-        // do something
         return Promise.reject(error);
     }
 );
